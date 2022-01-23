@@ -1096,10 +1096,10 @@ box-shadow 250ms var(--bezier-timing);
     margin-bottom: 10px;
     position: relative;
 }
-/* .form-comment{
+.form-comment{
     margin-bottom: 20px;
     position: relative;
-} */
+} 
 .form-label{
     position: relative;
     display: block;
@@ -1122,12 +1122,12 @@ box-shadow 250ms var(--bezier-timing);
     border-radius: 4px;
     outline: none;
 }
-/* .form-input:focus{
+.form-input:focus{
     outline: 1px solid var(--accent-color);
 }
 .form-input:focus+.form-icon{
     fill: var(--accent-color);
-} */
+} 
 .form-message{
     display: block;
     margin-bottom: 10px;
@@ -1179,12 +1179,19 @@ box-shadow 250ms var(--bezier-timing);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
+.form-title {
+    padding-bottom: 4px;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
 .form-icon{
     position: absolute;
     top: 50%;
     left: 12px;
-    width: 18px;
-    height: 18px;
+    
     -webkit-transition: fill 250ms var(--bezier-timing), outline 250ms var(--bezier-timing);
     -o-transition: fill 250ms var(--bezier-timing), outline 250ms var(--bezier-timing);
     transition: fill 250ms var(--bezier-timing),
@@ -1225,16 +1232,16 @@ box-shadow 250ms var(--bezier-timing);
 }
 .checkbox{
     position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     clip: rect(0 0 0 0);
     width: 1px;
     height: 1px;
     margin: -1px;
     overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
 }
-.checkbox-modal::before{
+.checkbox-modal::before {
     content: "";
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
@@ -1252,9 +1259,9 @@ box-shadow 250ms var(--bezier-timing);
     left: 12px;
     opacity: 0;
     pointer-events: none;
-    /* width: 16px;
+    width: 16px;
     height: 16px;
-     */
+    
     background-color: var(--accent-color);
     fill: var(--accent-color-text);
     border: 2px solid var(--accent-color);
@@ -1290,6 +1297,7 @@ box-shadow 250ms var(--bezier-timing);
     background: var(--background-color-modal);
 }
 .click-title{
+    
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

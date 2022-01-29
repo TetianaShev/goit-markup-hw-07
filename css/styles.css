@@ -255,7 +255,7 @@ a{
 } 
 
 
-/* Feature */
+/* Features */
 
 .feature__list{
     display: -webkit-box;
@@ -298,7 +298,7 @@ a{
     height: 70px;
 }
 
-/* Примеры работ */
+/* photo */
 
 .photo {
     padding-top: 0px;
@@ -472,7 +472,7 @@ a{
     fill: var(--accent-color-text);
  }
 
-/* Client */
+/* Clients */
 .section-client{
     padding: 94px auto;
     background-color: var(--portfolio-color);
@@ -852,12 +852,6 @@ color: var(--accent-color-text);
     justify-content: center;
     margin-top: 20px;
   }
-  
-  /* .fsocial-icon{
-      width: 20px;
-      height: 20px;
-      fill: var(--accent-color-text);
-    } */
 .fsocial__item{
         width: 44px;
         height: 44px;
@@ -897,6 +891,9 @@ color: var(--accent-color-text);
   .fsocial__link:hover .fsocial__icon,
   .fsocial_-link:focus .fsocial__icon{
       fill: var(--accent-color-text);
+  }
+  .fsocial__icon{
+      fill: currentColor;
   }
   /* subscribe */
   .subscribe {

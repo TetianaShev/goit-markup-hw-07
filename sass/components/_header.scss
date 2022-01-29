@@ -44,6 +44,7 @@
 
 .site-nav__list{ 
     display: flex;
+    margin-left: auto;
 }
 .site-nav__item{
     margin-right: 50px;
@@ -82,15 +83,15 @@
     
 
 /* web studio -contact*/
+
 .contact-nav__list{
     display: flex;
     margin-left: auto;
     }
 .contact-nav__item{
     margin-right: 50px;
-
     &:last-child{
-    margin-right: 0;
+        margin-right: 0;
     }
 }
 .contact-nav__link {
@@ -100,17 +101,17 @@
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    
     transition: color 250ms var(--bezier-timing);
+
     &:hover,
     &:focus{
-        color: var(--accent-color);
-    }
+    color: var(--accent-color);
+}
     }
 .contact-nav__icon{
     margin-right: 10px;
     fill: currentColor;
     width: 16px;
     height: 12px;
-   
+    margin-right: 10px;
    }

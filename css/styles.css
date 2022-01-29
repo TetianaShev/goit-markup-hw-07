@@ -539,7 +539,7 @@ a{
 
 
 /* Buttons */
- .ul-filter__list{
+ .filter__list{
     margin-bottom: 50px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -548,13 +548,13 @@ a{
     -ms-flex-pack: center;
     justify-content: center;
 }
-.ul-filter__item {
+.filter__item {
     margin-right: 8px;
   }
-.ul-filter__item:last-child {
+.filter__item:last-child {
     margin-right: 0;
 }
-.ul-filter__btn{
+.filter__btn{
     color: var(--titles-text-color-first);
     background-color: var(--backing-color);
     padding: 6px 22px;
@@ -573,8 +573,8 @@ a{
     transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing), box-shadow 250ms var(--bezier-timing);
     transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing), box-shadow 250ms var(--bezier-timing), -webkit-box-shadow 250ms var(--bezier-timing);
 }
-.ul-filter__btn:hover,
-.ul-filter__btn:focus{
+.filter__btn:hover,
+.filter__btn:focus{
     color: var(--accent-color-text);
     background-color: var(--accent-color);
     -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -700,8 +700,6 @@ color: var(--accent-color-text);
   -o-transition: transform 250ms var(--bezier-timing), box-shadow 250ms var(--bezier-timing);
   transition: transform 250ms var(--bezier-timing), box-shadow 250ms var(--bezier-timing);
   transition: transform 250ms var(--bezier-timing), box-shadow 250ms var(--bezier-timing), -webkit-transform 250ms var(--bezier-timing), -webkit-box-shadow 250ms var(--bezier-timing);
-
-
 }
 .portfolio__link:hover .portfolio__thumb-text,
 .portfolio__link:focus .portfolio__thumb-text{

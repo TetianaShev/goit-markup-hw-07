@@ -21,6 +21,7 @@
     border-radius: 50%;
     color: #afb1b8;
     background: rgba(255, 255, 255, 0.1);
+    
     transition:fill 250ms var(--bezier-timing),
     background-color 250ms var(--bezier-timing);
 
@@ -38,6 +39,6 @@
     margin-left: 70px;
   }
   .fsocial-icon {
-      fill: currentColor;
+      fill: var(--accent-color-text);
   } 
   

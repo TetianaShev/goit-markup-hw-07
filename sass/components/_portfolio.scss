@@ -4,7 +4,6 @@
     }
 .portfolio__item{
     display: block;
-    
     align-items: center;
     width: 370px;
     margin: 0 30px 30px 0;
@@ -71,7 +70,7 @@
 /* opasity: 0; */
     position: absolute;
     overflow: hidden;
-    background-color: rgba(33, 150, 243, 0.9);
+    background: rgba(33, 150, 243, 0.9);
     left: 0;
     top: 0;
     width: 370px;
@@ -89,8 +88,10 @@
     transform: translateY(101%);
     transition: transform 250ms var(--bezier-timing), 
     box-shadow 250ms var(--bezier-timing);
+
+    
 }
-.thumb-box,
+.thumb-box:hover,
 .thumb-box:focus{
     transform: translateZ(100%);
     overflow: visible;

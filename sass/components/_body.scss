@@ -6,7 +6,6 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
-
 h1,
 h2,
 h3,
@@ -23,7 +22,6 @@ img{
 ul{
     margin: 0;
     list-style: none;
-    -webkit-padding-start: 0;
     padding-inline-start: 0;
     }
 a{
@@ -41,5 +39,5 @@ a{
     fill: currentColor;
 }
 .section{
-    padding: 94px 0px;
+    padding: 94px 0;
 }

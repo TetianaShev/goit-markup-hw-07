@@ -36,7 +36,9 @@
     width: 100%;
     height: 100%;
     
-    transition: background-color 250ms var(--bezier-timing),fill 250ms var(--bezier-timing),border-color 250ms var(--bezier-timing);
+    transition: color 250ms var(--bezier-timing),
+    fill 250ms var(--bezier-timing),
+    border-color 250ms var(--bezier-timing);
 
     &:hover,
     &:focus{

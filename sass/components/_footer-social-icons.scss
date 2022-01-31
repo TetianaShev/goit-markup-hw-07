@@ -7,6 +7,7 @@
     width: 44px;
     height: 44px;
     margin-right: 10px;
+    
 
     &:last-child{
         margin-left: 0;
@@ -22,7 +23,8 @@
     color: #afb1b8;
     background: rgba(255, 255, 255, 0.1);
     
-    transition:fill 250ms var(--bezier-timing),
+    transition: color 250ms var(--bezier-timing)
+    fill 250ms var(--bezier-timing),
     background-color 250ms var(--bezier-timing);
 
     &:hover,
@@ -35,10 +37,10 @@
       fill: var(--accent-color-text);
   }
   }
-  .fsocial-title {
+  .fsocial__title {
     margin-left: 70px;
   }
-  .fsocial-icon {
+  .fsocial__icon {
       fill: var(--accent-color-text);
   } 
   

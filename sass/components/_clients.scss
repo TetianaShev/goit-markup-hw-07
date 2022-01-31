@@ -1,4 +1,4 @@
-.section-client{
+.section client {
     padding: 94px auto;
     background-color: var(--portfolio-color);
     color: var(--text-color);
@@ -35,17 +35,19 @@
     width: 100%;
     height: 100%;
     
-    transition: color 250ms var(--bezier-timing),
+    transition: background-color 250ms var(--bezier-timing),
+    color 250ms var(--bezier-timing),
     fill 250ms var(--bezier-timing),
     border-color 250ms var(--bezier-timing);
-
+    
+    
     &:hover,
     &:focus{
     color: var(--accent-color);
     border-color: var(--accent-color);
 }
-    &:hover .client-icon,
-    &:focus .client-icon{
+    &:hover .client__icon,
+    &:focus .client__icon{
     fill: var(--accent-color);
 }  
 }

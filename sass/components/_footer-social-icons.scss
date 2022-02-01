@@ -27,11 +27,7 @@
     fill 250ms var(--bezier-timing),
     background-color 250ms var(--bezier-timing);
 
-    &:hover,
-    &:focus{
-      fill: var(--accent-color-text);
-      background-color: var(--accent-color);
-  }
+    
     &:hover .fsocial__icon,
     &:focus .fsocial__icon{
       fill: var(--accent-color-text);
@@ -42,5 +38,10 @@
   }
   .fsocial__icon {
       fill: var(--accent-color-text);
+    &:hover,
+    &:focus{
+      fill: var(--accent-color-text);
+      background-color: var(--accent-color);
+  }
   } 
   

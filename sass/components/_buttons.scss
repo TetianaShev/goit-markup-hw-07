@@ -5,12 +5,9 @@
     height: 1px;
     margin: -1px;
   }
-.filter{
-   
-    margin-top: 94px;
-    margin-bottom: 94px;
-    margin-bottom: 50px;
+.filter{ 
     display: flex;
+    margin-bottom: 50px;
     justify-content: center;
 }
 
@@ -21,19 +18,16 @@
         margin-right: 0;
     }
   }
-.filter__btn{
+.filter__button{
     color: var(--titles-text-color-first);
     background-color: var(--backing-color);
     padding: 6px 22px;
-    cursor: pointer;
     border-style: none;
     border: 1px solid transparent;
     border-radius: 4px;
+    cursor: pointer;
     text-align: center;
     font-size: 16px;
-    font-weight: 500;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
     
     transition: color 250ms var(--bezier-timing), 
     background-color 250ms var(--bezier-timing), 

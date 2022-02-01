@@ -28,13 +28,13 @@
      background-color: var(--accent-color);
      fill: var(--accent-color-text);
  }
-    &:hover  .social-icon,
-    &:focus  .social-icon {
+    &:hover  .social__icon,
+    &:focus  .social__icon {
     fill: var(--accent-color-text);
  } 
 }
 
-.social-icon{
+.social__icon{
     fill: currentColor;
     width: 20px;
     height: 20px;

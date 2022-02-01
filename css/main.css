@@ -88,9 +88,8 @@ a {
   display: flex;
 }
 
-.logo-header {
+.logo {
   margin-right: 93px;
-  color: #000000;
   text-decoration: none;
   font-family: Raleway, sans-serif;
   color: var(--accent-color);
@@ -100,16 +99,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-.logo-header__web {
-  font-family: Raleway, sans-serif;
-  color: var(--titles-text-color-first);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-.logo-header__studio {
+.logo__studio {
   font-family: Raleway, sans-serif;
   color: var(--titles-text-color-first);
   font-weight: 700;
@@ -122,7 +112,7 @@ a {
   transition: color 250ms var(--bezier-timing);
 }
 
-.logo-header__studio:hover, .logo-header__studio:focus {
+.logo__studio:hover, .logo__studio:focus {
   color: var(--accent-color);
 }
 
@@ -176,7 +166,7 @@ a {
 }
 
 /* web studio -contact*/
-.contact-nav__list {
+.contact-nav {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -219,7 +209,6 @@ a {
   fill: currentColor;
   width: 16px;
   height: 12px;
-  margin-right: 10px;
 }
 
 .hero {
@@ -247,7 +236,7 @@ a {
   line-height: 1.36;
 }
 
-.hero-button {
+.hero__button {
   width: 200px;
   height: 50px;
   margin-top: 30px;
@@ -262,12 +251,12 @@ a {
   transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
 }
 
-.hero-button:hover, .hero-button:focus {
+.hero__button:hover, .hero__button:focus {
   color: var(--accent-color);
   background-color: var(--accent-color-text);
 }
 
-.feature__list {
+.feature {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -292,7 +281,7 @@ a {
   margin-bottom: 10px;
 }
 
-.feature__icon {
+.feature__box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -324,7 +313,7 @@ a {
   margin-right: auto;
 }
 
-.photo__list {
+.photo {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -353,7 +342,7 @@ a {
   position: relative;
 }
 
-.box {
+.photo-wrapper {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -373,7 +362,7 @@ a {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.box__text {
+.photo-wrapper__text {
   color: var(--accent-color-text);
   font-weight: 700;
   font-size: 14px;
@@ -392,7 +381,7 @@ a {
   padding: 94px 0;
 }
 
-.team__list {
+.team {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -408,7 +397,7 @@ a {
   margin-right: 0;
 }
 
-.team__card {
+.team__wrapp {
   display: block;
   -webkit-box-align: center;
   -webkit-align-items: center;
@@ -489,18 +478,18 @@ a {
   fill: var(--accent-color-text);
 }
 
-.social-list__link:hover .social-icon,
-.social-list__link:focus .social-icon {
+.social-list__link:hover .social__icon,
+.social-list__link:focus .social__icon {
   fill: var(--accent-color-text);
 }
 
-.social-icon {
+.social__icon {
   fill: currentColor;
   width: 20px;
   height: 20px;
 }
 
-.section-client {
+.section client {
   padding: 94px auto;
   background-color: var(--portfolio-color);
   color: var(--text-color);
@@ -515,7 +504,7 @@ a {
   letter-spacing: 0.03em;
 }
 
-.client__list {
+.client {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -556,9 +545,9 @@ a {
           border-radius: 4px;
   width: 100%;
   height: 100%;
-  -webkit-transition: color 250ms var(--bezier-timing), fill 250ms var(--bezier-timing), border-color 250ms var(--bezier-timing);
-  -o-transition: color 250ms var(--bezier-timing), fill 250ms var(--bezier-timing), border-color 250ms var(--bezier-timing);
-  transition: color 250ms var(--bezier-timing), fill 250ms var(--bezier-timing), border-color 250ms var(--bezier-timing);
+  -webkit-transition: background-color 250ms var(--bezier-timing), color 250ms var(--bezier-timing), fill 250ms var(--bezier-timing), border-color 250ms var(--bezier-timing);
+  -o-transition: background-color 250ms var(--bezier-timing), color 250ms var(--bezier-timing), fill 250ms var(--bezier-timing), border-color 250ms var(--bezier-timing);
+  transition: background-color 250ms var(--bezier-timing), color 250ms var(--bezier-timing), fill 250ms var(--bezier-timing), border-color 250ms var(--bezier-timing);
 }
 
 .client__link:hover, .client__link:focus {
@@ -566,13 +555,19 @@ a {
   border-color: var(--accent-color);
 }
 
-.client__link:hover .client-icon,
-.client__link:focus .client-icon {
+.client__link:hover .client__icon,
+.client__link:focus .client__icon {
   fill: var(--accent-color);
 }
 
 .client__icon {
   fill: currentColor;
+}
+
+.projects {
+  display: block;
+  margin-top: 94px;
+  margin-right: 94px;
 }
 
 .visually-hidden {
@@ -584,13 +579,11 @@ a {
 }
 
 .filter {
-  margin-top: 94px;
-  margin-bottom: 94px;
-  margin-bottom: 50px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 50px;
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
@@ -605,20 +598,20 @@ a {
   margin-right: 0;
 }
 
-.filter__btn {
+.filter__button {
+  display: inline-block;
   color: var(--titles-text-color-first);
   background-color: var(--backing-color);
   padding: 6px 22px;
-  cursor: pointer;
   border-style: none;
   border: 1px solid transparent;
   -webkit-border-radius: 4px;
           border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
   text-align: center;
   font-size: 16px;
-  font-weight: 500;
-  line-height: 1.63;
-  letter-spacing: 0.03em;
+  outline: none;
   -webkit-transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing), -webkit-box-shadow 250ms var(--bezier-timing);
   transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing), -webkit-box-shadow 250ms var(--bezier-timing);
   -o-transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing), box-shadow 250ms var(--bezier-timing);
@@ -626,7 +619,7 @@ a {
   transition: color 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing), box-shadow 250ms var(--bezier-timing), -webkit-box-shadow 250ms var(--bezier-timing);
 }
 
-.filter__btn:hover, .filter__btn:focus {
+.filter__button:hover, .filter__button:focus {
   color: var(--accent-color-text);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.01);
@@ -936,9 +929,9 @@ a {
           border-radius: 50%;
   color: #afb1b8;
   background: rgba(255, 255, 255, 0.1);
-  -webkit-transition: fill 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
-  -o-transition: fill 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
-  transition: fill 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
+  -webkit-transition: color 250ms var(--bezier-timing) fill 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
+  -o-transition: color 250ms var(--bezier-timing) fill 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
+  transition: color 250ms var(--bezier-timing) fill 250ms var(--bezier-timing), background-color 250ms var(--bezier-timing);
 }
 
 .fsocial__link:hover, .fsocial__link:focus {
@@ -951,11 +944,11 @@ a {
   fill: var(--accent-color-text);
 }
 
-.fsocial-title {
+.fsocial__title {
   margin-left: 70px;
 }
 
-.fsocial-icon {
+.fsocial__icon {
   fill: var(--accent-color-text);
 }
 
@@ -1114,9 +1107,9 @@ a {
   left: 50%;
   width: 528px;
   min-height: 581px;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+      -ms-transform: translate(-50%, -50%) scale(1);
+          transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform 250ms var(--bezier-timing);
   transition: -webkit-transform 250ms var(--bezier-timing);
   -o-transition: transform 250ms var(--bezier-timing);
@@ -1345,15 +1338,15 @@ a {
 
 .checkbox {
   position: absolute;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   clip: rect(0 0 0 0);
   width: 1px;
   height: 1px;
   margin: -1px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .checkbox-modal::before {
@@ -1403,22 +1396,18 @@ a {
           background-origin: border-box;
 }
 
-.checkbox-button {
-  margin: 0 auto;
-}
-
 .click {
   text-align: center;
   width: 200px;
   height: 50px;
   cursor: pointer;
-  margin-bottom: 0 124px;
-  background-color: var(--background-color-modal);
+  margin: 0 124px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 4px;
           border-radius: 4px;
   border: transparent;
+  background: var(--background-color-modal);
 }
 
 .click-title {

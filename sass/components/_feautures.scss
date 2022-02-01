@@ -1,4 +1,4 @@
-.feature__list{
+.feature{
     display: flex;
 }
 .feature__item{
@@ -16,7 +16,7 @@
     letter-spacing: 0.03em;
     margin-bottom: 10px;
 }
-.feature__icon{
+.feature__box {
     display: flex;
     justify-content: center;
     align-items: center;

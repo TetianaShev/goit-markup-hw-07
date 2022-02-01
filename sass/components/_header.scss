@@ -5,7 +5,7 @@
     align-items: center;
     display: flex;
 }
-.logo-header{
+.logo{
     margin-right: 93px;
     text-decoration: none;
     font-family: Raleway, sans-serif ;
@@ -17,7 +17,7 @@
     }
 
 
-.logo-header__studio {
+.logo__studio {
     font-family: Raleway, sans-serif;
     color: var(--titles-text-color-first);
     font-weight: 700;
@@ -37,6 +37,7 @@
 .site-nav__list{ 
     display: flex;
     margin-left: auto;
+    
 }
 .site-nav__item{
     margin-right: 50px;
@@ -47,7 +48,6 @@
 .site-nav__link {
     display: block;
     padding: 32px 0;
-    
     color: var(--titles-text-color-first);
     font-weight: 500;
     font-size: 14px;
@@ -76,7 +76,7 @@
 
 /* web studio -contact*/
 
-.contact-nav__list{
+.contact-nav{
     display: flex;
     margin-left: auto;
     }
@@ -105,5 +105,5 @@
     fill: currentColor;
     width: 16px;
     height: 12px;
-    margin-right: 10px;
+    
    }

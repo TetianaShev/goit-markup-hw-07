@@ -5,7 +5,7 @@
 .section .team{
   padding: 94px 0;
 }  
-.team__list {
+.team {
     display: flex;
     margin-top: 50px;
   }
@@ -16,7 +16,7 @@
       }
 }
 
-.team__card {
+.team__wrapp {
     display: block;
     align-items: center;
     padding-top: 30px;
